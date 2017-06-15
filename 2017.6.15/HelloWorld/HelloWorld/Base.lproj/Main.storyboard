@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-Iw-WIK">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLm-lI-TdS">
+                                <rect key="frame" x="158" y="98" width="59" height="30"/>
+                                <state key="normal" title="Click Me"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="heg-Gx-AQQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-F1-tHG">
+                                <rect key="frame" x="16" y="160" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iLm-lI-TdS" firstAttribute="top" secondItem="xW3-Iw-WIK" secondAttribute="bottom" constant="32" id="4ek-rF-0tF"/>
+                            <constraint firstItem="xW3-Iw-WIK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="OwU-4b-jau"/>
+                            <constraint firstItem="iLm-lI-TdS" firstAttribute="centerX" secondItem="xW3-Iw-WIK" secondAttribute="centerX" id="Qit-RL-fzM"/>
+                            <constraint firstItem="Bga-F1-tHG" firstAttribute="trailing" secondItem="xW3-Iw-WIK" secondAttribute="trailing" id="SAY-IN-hAV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Bga-F1-tHG" secondAttribute="bottom" constant="8" id="VVS-0Y-TQd"/>
+                            <constraint firstItem="Bga-F1-tHG" firstAttribute="leading" secondItem="xW3-Iw-WIK" secondAttribute="leading" id="lS5-k6-fxA"/>
+                            <constraint firstItem="xW3-Iw-WIK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="qLX-iU-u2y"/>
+                            <constraint firstItem="Bga-F1-tHG" firstAttribute="top" secondItem="iLm-lI-TdS" secondAttribute="bottom" constant="32" id="uMO-Ul-0Mw"/>
+                            <constraint firstAttribute="trailing" secondItem="xW3-Iw-WIK" secondAttribute="trailing" constant="16" id="yDG-Xy-buG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Bga-F1-tHG" id="ifT-6h-fXC"/>
+                        <outlet property="textField" destination="xW3-Iw-WIK" id="IUj-nL-Ois"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
