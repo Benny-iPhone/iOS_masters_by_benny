@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DateConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-4d-u6h">
+                                <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="520191880.32173502">
+                                    <!--2017-06-26 17:44:40 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerValueChangedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mpA-8s-QG3"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-E1-s70">
+                                <rect key="frame" x="166" y="300" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MPJ-4d-u6h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="XPd-2E-7nK"/>
+                            <constraint firstItem="NOY-E1-s70" firstAttribute="centerX" secondItem="MPJ-4d-u6h" secondAttribute="centerX" id="Xvi-7B-BIA"/>
+                            <constraint firstAttribute="trailing" secondItem="MPJ-4d-u6h" secondAttribute="trailing" id="YvO-jd-pSY"/>
+                            <constraint firstItem="NOY-E1-s70" firstAttribute="top" secondItem="MPJ-4d-u6h" secondAttribute="bottom" constant="40" id="acT-xE-dfk"/>
+                            <constraint firstItem="MPJ-4d-u6h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mil-Oo-wKz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="NOY-E1-s70" id="6zg-iv-GTm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
