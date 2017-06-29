@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IaG-mW-6Ic">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Blue"/>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="pink"/>
+                                    <segment title="brown"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="JW9-Uy-RRz"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5O-wA-wZr">
+                                <rect key="frame" x="67" y="269.5" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Rt2-kK-Xqi"/>
+                                    <constraint firstAttribute="width" constant="240" id="jZ0-jW-O5F"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B5O-wA-wZr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8pO-WV-E9R"/>
+                            <constraint firstItem="IaG-mW-6Ic" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="KGy-fl-fgt"/>
+                            <constraint firstItem="IaG-mW-6Ic" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="L85-Kn-gyQ"/>
+                            <constraint firstItem="B5O-wA-wZr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PBO-CR-nh8"/>
+                            <constraint firstAttribute="trailing" secondItem="IaG-mW-6Ic" secondAttribute="trailing" constant="16" id="Sax-NJ-gLe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorView" destination="B5O-wA-wZr" id="SSn-Iu-bmk"/>
+                        <outlet property="segmentedControl" destination="IaG-mW-6Ic" id="4g8-Ad-dJO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

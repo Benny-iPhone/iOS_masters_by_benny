@@ -36,22 +36,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HOo-Yd-I8a">
+                                <rect key="frame" x="16" y="337" width="343" height="29"/>
+                                <segments>
+                                    <segment title="לועזי לעברי"/>
+                                    <segment title="עברי ללועזי"/>
+                                    <segment title="לועזי לסיני"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6dX-I1-Mfl"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="HOo-Yd-I8a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="CYv-NO-slF"/>
                             <constraint firstItem="MPJ-4d-u6h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="XPd-2E-7nK"/>
                             <constraint firstItem="NOY-E1-s70" firstAttribute="centerX" secondItem="MPJ-4d-u6h" secondAttribute="centerX" id="Xvi-7B-BIA"/>
                             <constraint firstAttribute="trailing" secondItem="MPJ-4d-u6h" secondAttribute="trailing" id="YvO-jd-pSY"/>
                             <constraint firstItem="NOY-E1-s70" firstAttribute="top" secondItem="MPJ-4d-u6h" secondAttribute="bottom" constant="40" id="acT-xE-dfk"/>
+                            <constraint firstAttribute="trailing" secondItem="HOo-Yd-I8a" secondAttribute="trailing" constant="16" id="brG-12-USU"/>
+                            <constraint firstItem="HOo-Yd-I8a" firstAttribute="top" secondItem="NOY-E1-s70" secondAttribute="bottom" constant="16" id="ePM-IP-pj7"/>
                             <constraint firstItem="MPJ-4d-u6h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mil-Oo-wKz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="MPJ-4d-u6h" id="3Zm-Uj-QT7"/>
                         <outlet property="label" destination="NOY-E1-s70" id="6zg-iv-GTm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>
