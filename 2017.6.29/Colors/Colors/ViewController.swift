@@ -32,12 +32,33 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         segmentAction(segmentedControl)
+        
+        Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true) { (_) in
+            if self.segmentedControl.selectedSegmentIndex == self.segmentedControl.numberOfSegments - 1{
+                self.segmentedControl.selectedSegmentIndex = 0
+            } else {
+                self.segmentedControl.selectedSegmentIndex += 1
+            }
+            
+            self.segmentAction(self.segmentedControl)
+        }
     }
     
     @IBAction func segmentAction(_ sender: UISegmentedControl) {
         let index = sender.selectedSegmentIndex
         let color = Colors(rawValue: index)
-        colorView.backgroundColor = color?.getColor()
+        
+        
+        let rotate = CGAffineTransform(rotationAngle: CGFloat.pi * 0.25)
+        let current = self.colorView.transform
+        let total = current.concatenating(rotate)
+        
+        UIView.animate(withDuration: 1.5) {
+            self.colorView.backgroundColor = color?.getColor()
+            self.colorView.transform = total
+        }
+        
+        
     }
     
 
