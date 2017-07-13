@@ -13,6 +13,11 @@ class ViewController: UIViewController , SecondViewControllerDelegate{
     @IBOutlet weak var textField: UITextField!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /*
+        if segue.destination is SecondViewController{
+            let nextVC = segue.destination as! SecondViewController
+            nextVC.str = ""
+        }*/
         
         if let nextVC = segue.destination as? SecondViewController{
             

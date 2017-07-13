@@ -9,54 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProtocolProject/ViewController.swift"
-            timestampString = "521403330.708192"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProtocolProject.ViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
-                  moduleName = "ProtocolProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/benny/Desktop/courses/2017.7.10/ProtocolProject/ProtocolProject/ViewController.swift"
-                  timestampString = "521403331.04145"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProtocolProject.ViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
-                  moduleName = "ProtocolProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/benny/Desktop/courses/2017.7.10/ProtocolProject/ProtocolProject/ViewController.swift"
-                  timestampString = "521403331.044839"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "155">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ProtocolProject/SecondViewController.swift"
             timestampString = "521403508.308661"
             startingColumnNumber = "9223372036854775807"

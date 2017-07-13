@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutocompleteProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type an address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-mZ-sOZ">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJw-PW-SN0">
+                                <rect key="frame" x="133" y="98" width="109" height="30"/>
+                                <state key="normal" title="find my location"/>
+                                <connections>
+                                    <action selector="findLocationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o89-Bl-gQ5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xah-Vj-6H8">
+                                <rect key="frame" x="16" y="144" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvv-Fl-KgU">
+                                <rect key="frame" x="0.0" y="181" width="375" height="486"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rJw-PW-SN0" firstAttribute="centerX" secondItem="6nc-mZ-sOZ" secondAttribute="centerX" id="1Ut-a2-mFi"/>
+                            <constraint firstAttribute="trailing" secondItem="6nc-mZ-sOZ" secondAttribute="trailing" constant="16" id="7RN-pi-wsL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xvv-Fl-KgU" secondAttribute="bottom" id="M0k-am-xLN"/>
+                            <constraint firstItem="6nc-mZ-sOZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="NGc-sE-Sq0"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xah-Vj-6H8" secondAttribute="trailing" constant="16" id="P0N-Lr-XA4"/>
+                            <constraint firstAttribute="trailing" secondItem="xvv-Fl-KgU" secondAttribute="trailing" id="R7t-JL-QaD"/>
+                            <constraint firstItem="Xah-Vj-6H8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="UX7-EU-JhF"/>
+                            <constraint firstItem="xvv-Fl-KgU" firstAttribute="top" secondItem="Xah-Vj-6H8" secondAttribute="bottom" constant="16" id="fAs-ud-tvV"/>
+                            <constraint firstItem="6nc-mZ-sOZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="gAA-Dc-LDE"/>
+                            <constraint firstItem="xvv-Fl-KgU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qDw-bT-9vo"/>
+                            <constraint firstItem="rJw-PW-SN0" firstAttribute="top" secondItem="6nc-mZ-sOZ" secondAttribute="bottom" constant="32" id="sUk-Cf-oNP"/>
+                            <constraint firstItem="Xah-Vj-6H8" firstAttribute="top" secondItem="rJw-PW-SN0" secondAttribute="bottom" constant="16" id="vy1-AA-mlh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="6nc-mZ-sOZ" id="z5b-Hu-0JD"/>
+                        <outlet property="label" destination="Xah-Vj-6H8" id="YRK-a5-ij6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="54.422788605697157"/>
+        </scene>
+    </scenes>
+</document>
