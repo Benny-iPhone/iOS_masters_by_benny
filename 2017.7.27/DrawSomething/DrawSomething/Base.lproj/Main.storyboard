@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawSomething" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUW-Sg-6YF">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1q6-aJ-gwl"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="trash" id="QOe-IF-rFW">
+                                        <connections>
+                                            <action selector="clearAction:" destination="BYZ-38-t0r" id="fCJ-bz-wy4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="in4-PY-6Rv">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" id="XO9-Zy-0gq">
+                                            <rect key="frame" x="45" y="6.5" width="118" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="x1e-1Z-bSp"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="sx3-BY-r8V">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="SYP-8L-JAA">
+                                            <rect key="frame" x="173" y="7" width="121" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Black"/>
+                                                <segment title="Red"/>
+                                                <segment title="Blue"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="NB6-jv-xd8"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="58I-hz-6UB"/>
+                                    <barButtonItem systemItem="action" id="HSk-CW-eJO">
+                                        <connections>
+                                            <action selector="shareAction:" destination="BYZ-38-t0r" id="aq3-SR-7PN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Oo-jU-NCz" customClass="DrawView" customModule="DrawSomething" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Oo-jU-NCz" secondAttribute="trailing" id="EgZ-cV-qxE"/>
+                            <constraint firstItem="HUW-Sg-6YF" firstAttribute="top" secondItem="7Oo-jU-NCz" secondAttribute="bottom" id="JD4-JM-f1h"/>
+                            <constraint firstItem="HUW-Sg-6YF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VQI-5E-Cn3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HUW-Sg-6YF" secondAttribute="bottom" id="ddD-Wx-Mnp"/>
+                            <constraint firstItem="7Oo-jU-NCz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j6R-mC-Y8b"/>
+                            <constraint firstItem="7Oo-jU-NCz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ttt-g5-aZe"/>
+                            <constraint firstAttribute="trailing" secondItem="HUW-Sg-6YF" secondAttribute="trailing" id="voF-6v-fiE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawView" destination="7Oo-jU-NCz" id="7KB-PV-xBk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
