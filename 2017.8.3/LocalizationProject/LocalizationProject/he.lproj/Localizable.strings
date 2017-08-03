@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  LocalizationProject
+
+  Created by Benny Davidovitz on 03/08/2017.
+  Copyright © 2017 com.hackeru. All rights reserved.
+*/
+
+"greeting" = "שלום";
+"login_vc_button" = "התחבר";
+"login_vc_later" = "מחר כך";
+
+"second_label" = "זאב 💌 📱";
+
+
+"alert_title" = "הי אתה";
+"alert_message" = "ממצב?";
+"alert_ok_button" = "סבבה";
