@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageViewProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_cake" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-yB-mic">
+                                <rect key="frame" x="8" y="579" width="80" height="80"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-unchecked_circle" highlightedImage="icons8-checked" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5kc-6E-Llf">
+                                <rect key="frame" x="334" y="36" width="25" height="25"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="siQ-7M-gA2" appends="YES" id="Z8W-PH-OpG"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="morgan" translatesAutoresizingMaskIntoConstraints="NO" id="42z-DI-kVq" customClass="RoundImageView" customModule="ImageViewProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="256" height="256"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5kc-6E-Llf" secondAttribute="trailing" constant="16" id="3MK-fG-frA"/>
+                            <constraint firstItem="Kgq-yB-mic" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="AUl-bY-RVZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kgq-yB-mic" secondAttribute="bottom" constant="8" id="BC6-nl-3d3"/>
+                            <constraint firstItem="42z-DI-kVq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="JFO-TU-mMc"/>
+                            <constraint firstItem="5kc-6E-Llf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="TlW-c2-xQZ"/>
+                            <constraint firstItem="42z-DI-kVq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="YrF-la-su4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="siQ-7M-gA2">
+                    <connections>
+                        <action selector="radioBoxAction:" destination="BYZ-38-t0r" id="kEN-5O-k6n"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="116" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_cake" width="80" height="80"/>
+        <image name="icons8-checked" width="20" height="20"/>
+        <image name="icons8-unchecked_circle" width="25" height="25"/>
+        <image name="morgan" width="256" height="256"/>
+    </resources>
+</document>
