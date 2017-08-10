@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlusMinusButtons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDW-st-gjm" customClass="NumberButton" customModule="PlusMinusButtons" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PX4-QM-yAB"/>
+                                    <constraint firstAttribute="width" constant="50" id="nuR-6D-OT0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgE-am-jRO">
+                                <rect key="frame" x="246" y="133" width="50" height="50"/>
+                                <state key="normal" image="icons8-plus"/>
+                                <state key="highlighted" image="icons8-plus_filled"/>
+                                <connections>
+                                    <action selector="plusAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEP-F5-ekb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPj-6V-AST">
+                                <rect key="frame" x="138" y="140" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kvh-bH-waZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bC-D1-04u">
+                                <rect key="frame" x="80" y="133" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="icons8-minus"/>
+                                <state key="highlighted" image="icons8-minus_filled"/>
+                                <connections>
+                                    <action selector="minusAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yY-I2-sFl"/>
+                                    <outletCollection property="gestureRecognizers" destination="1kw-nC-JbM" appends="YES" id="S8z-C4-AyV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1bC-D1-04u" firstAttribute="centerY" secondItem="tPj-6V-AST" secondAttribute="centerY" id="BUx-3X-teY"/>
+                            <constraint firstItem="tPj-6V-AST" firstAttribute="leading" secondItem="1bC-D1-04u" secondAttribute="trailing" constant="8" id="YX0-rw-MF6"/>
+                            <constraint firstItem="eDW-st-gjm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="f29-NH-298"/>
+                            <constraint firstItem="tPj-6V-AST" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ma9-6G-Eu0"/>
+                            <constraint firstItem="tPj-6V-AST" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="p2s-eP-6TJ"/>
+                            <constraint firstItem="eDW-st-gjm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="q4L-H1-GZT"/>
+                            <constraint firstItem="tgE-am-jRO" firstAttribute="centerY" secondItem="tPj-6V-AST" secondAttribute="centerY" id="vDR-l9-YME"/>
+                            <constraint firstItem="tgE-am-jRO" firstAttribute="leading" secondItem="tPj-6V-AST" secondAttribute="trailing" constant="8" id="yPA-VY-yZ6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="tPj-6V-AST" id="p13-8h-cvu"/>
+                        <outlet property="minusButton" destination="1bC-D1-04u" id="nlE-Yf-3VU"/>
+                        <outlet property="plusButton" destination="tgE-am-jRO" id="JCh-zr-JvN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="1kw-nC-JbM">
+                    <connections>
+                        <action selector="minusLongPressAction:" destination="BYZ-38-t0r" id="Kca-E0-h15"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-minus" width="50" height="50"/>
+        <image name="icons8-minus_filled" width="50" height="50"/>
+        <image name="icons8-plus" width="50" height="50"/>
+        <image name="icons8-plus_filled" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ButtonProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW8-IW-HxK">
+                                <rect key="frame" x="309" y="36" width="50" height="50"/>
+                                <state key="normal" image="icons8-coffee_maker"/>
+                                <state key="disabled" image="icons8-coffee_maker_disabled"/>
+                                <state key="highlighted" image="icons8-coffee_maker_filled"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzW-s2-M8Y" customClass="BoldButton" customModule="ButtonProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="42" height="48"/>
+                                <state key="normal">
+                                    <string key="title">Line 1
+Line 2</string>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD1-Ok-vMD" customClass="SubmitButton" customModule="ButtonProject" customModuleProvider="target">
+                                <rect key="frame" x="24" y="613" width="327" height="30"/>
+                                <state key="normal" title="Save Data"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCC-yA-m2p" customClass="SubmitButton" customModule="ButtonProject" customModuleProvider="target">
+                                <rect key="frame" x="169" y="559" width="36" height="30"/>
+                                <state key="normal" title="Later"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dCC-yA-m2p" firstAttribute="centerX" secondItem="WD1-Ok-vMD" secondAttribute="centerX" id="385-C3-IHR"/>
+                            <constraint firstAttribute="trailing" secondItem="RW8-IW-HxK" secondAttribute="trailing" constant="16" id="7XC-97-fXh"/>
+                            <constraint firstItem="WD1-Ok-vMD" firstAttribute="top" secondItem="dCC-yA-m2p" secondAttribute="bottom" constant="24" id="Fyy-fs-1Sd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WD1-Ok-vMD" secondAttribute="bottom" constant="24" id="ISf-ZE-Z4r"/>
+                            <constraint firstItem="RW8-IW-HxK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Ngn-xM-puN"/>
+                            <constraint firstItem="MzW-s2-M8Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="YqM-sm-tsx"/>
+                            <constraint firstAttribute="trailing" secondItem="WD1-Ok-vMD" secondAttribute="trailing" constant="24" id="eb9-Nl-Y6J"/>
+                            <constraint firstItem="MzW-s2-M8Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="hLk-np-cEa"/>
+                            <constraint firstItem="WD1-Ok-vMD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="kGQ-9A-ah1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-coffee_maker" width="50" height="50"/>
+        <image name="icons8-coffee_maker_disabled" width="50" height="50"/>
+        <image name="icons8-coffee_maker_filled" width="50" height="50"/>
+    </resources>
+</document>
