@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FacebookProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW0-1x-Isx">
+                                <rect key="frame" x="144" y="28" width="86" height="30"/>
+                                <state key="normal" title="get user info"/>
+                                <connections>
+                                    <action selector="getUserInfoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDV-pJ-9JG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RCJ-Bf-iyk">
+                                <rect key="frame" x="0.0" y="66" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="rlH-sX-C1N"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vLD-Pa-Rgc">
+                                <rect key="frame" x="137.5" y="144" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Qpw-1J-SOp"/>
+                                    <constraint firstAttribute="height" constant="100" id="nAo-ML-b0T"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkj-tr-N80">
+                                <rect key="frame" x="166" y="260" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZW0-1x-Isx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5kG-tQ-lI9"/>
+                            <constraint firstItem="RCJ-Bf-iyk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8cR-1G-btx"/>
+                            <constraint firstAttribute="trailing" secondItem="RCJ-Bf-iyk" secondAttribute="trailing" id="GfD-k4-df1"/>
+                            <constraint firstItem="RCJ-Bf-iyk" firstAttribute="top" secondItem="ZW0-1x-Isx" secondAttribute="bottom" constant="8" id="YaC-MD-buz"/>
+                            <constraint firstItem="vLD-Pa-Rgc" firstAttribute="centerY" secondItem="RCJ-Bf-iyk" secondAttribute="bottom" id="kQZ-vR-bw6"/>
+                            <constraint firstItem="Gkj-tr-N80" firstAttribute="top" secondItem="vLD-Pa-Rgc" secondAttribute="bottom" constant="16" id="ohI-5Q-Y8a"/>
+                            <constraint firstItem="vLD-Pa-Rgc" firstAttribute="centerX" secondItem="RCJ-Bf-iyk" secondAttribute="centerX" id="tlu-wd-h46"/>
+                            <constraint firstItem="Gkj-tr-N80" firstAttribute="centerX" secondItem="vLD-Pa-Rgc" secondAttribute="centerX" id="toZ-GP-xNS"/>
+                            <constraint firstItem="ZW0-1x-Isx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xZI-On-7Mu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coverImageView" destination="RCJ-Bf-iyk" id="Xnc-k3-pli"/>
+                        <outlet property="nameLabel" destination="Gkj-tr-N80" id="nMg-x1-Rhs"/>
+                        <outlet property="pictureImageView" destination="vLD-Pa-Rgc" id="xCf-P4-WUs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
