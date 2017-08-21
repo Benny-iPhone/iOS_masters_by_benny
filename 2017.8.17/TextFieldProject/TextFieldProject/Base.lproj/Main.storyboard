@@ -41,6 +41,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="IqM-A4-ayv"/>
+                                            <action selector="emailEditingChangedAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="5CE-QN-sRT"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="fjW-em-aB9"/>
                                         </connections>
                                     </textField>
@@ -61,6 +62,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="JW4-Su-9Po"/>
+                                            <action selector="phoneEditingChangedAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="LQ9-tt-5BY"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="7RF-58-WkD"/>
                                         </connections>
                                     </textField>

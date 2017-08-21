@@ -42,6 +42,22 @@ class ViewController: UIViewController , UITextFieldDelegate{
         
     }
     
+    @IBAction func emailEditingChangedAction(_ sender: UITextField) {
+        guard let text = sender.text else{
+            return
+        }
+        
+        sender.textColor = text.isValidEmail ? .black : .red
+    }
+    
+    @IBAction func phoneEditingChangedAction(_ sender: UITextField) {
+        guard let text = sender.text else{
+            return
+        }
+        
+        sender.textColor = text.isValidPhone ? .black : .red
+    }
+    
     
     @IBAction func tapAction(_ sender: Any) {
         //nameTextField.resignFirstResponder()

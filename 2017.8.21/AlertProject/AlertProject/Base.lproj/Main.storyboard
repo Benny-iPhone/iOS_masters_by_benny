@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwR-pc-SwF">
+                                <rect key="frame" x="121" y="60" width="132" height="30"/>
+                                <state key="normal" title="display simple alert"/>
+                                <connections>
+                                    <action selector="simpleAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64v-hH-Q2I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="um6-fd-s1P">
+                                <rect key="frame" x="129" y="130" width="117" height="30"/>
+                                <state key="normal" title="two buttons alert"/>
+                                <connections>
+                                    <action selector="twoButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i8g-JZ-YLy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNh-03-Uvx">
+                                <rect key="frame" x="125" y="200" width="124" height="30"/>
+                                <state key="normal" title="alert with textfield"/>
+                                <connections>
+                                    <action selector="alertWithTextFieldAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U1D-ZA-i6b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIM-Pg-x9L">
+                                <rect key="frame" x="153" y="270" width="69" height="30"/>
+                                <state key="normal" title="login alert"/>
+                                <connections>
+                                    <action selector="loginAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcz-Ty-hnh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YNh-03-Uvx" firstAttribute="top" secondItem="um6-fd-s1P" secondAttribute="bottom" constant="40" id="DMj-RJ-SwW"/>
+                            <constraint firstItem="um6-fd-s1P" firstAttribute="centerX" secondItem="IwR-pc-SwF" secondAttribute="centerX" id="DZn-SU-AOG"/>
+                            <constraint firstItem="nIM-Pg-x9L" firstAttribute="centerX" secondItem="YNh-03-Uvx" secondAttribute="centerX" id="HgB-DC-Cmf"/>
+                            <constraint firstItem="nIM-Pg-x9L" firstAttribute="top" secondItem="YNh-03-Uvx" secondAttribute="bottom" constant="40" id="SP8-qa-K99"/>
+                            <constraint firstItem="IwR-pc-SwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VYN-tk-4bN"/>
+                            <constraint firstItem="um6-fd-s1P" firstAttribute="top" secondItem="IwR-pc-SwF" secondAttribute="bottom" constant="40" id="ZfN-sj-nhO"/>
+                            <constraint firstItem="YNh-03-Uvx" firstAttribute="centerX" secondItem="um6-fd-s1P" secondAttribute="centerX" id="esY-Ur-ycM"/>
+                            <constraint firstItem="IwR-pc-SwF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="lIC-dw-OU9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
