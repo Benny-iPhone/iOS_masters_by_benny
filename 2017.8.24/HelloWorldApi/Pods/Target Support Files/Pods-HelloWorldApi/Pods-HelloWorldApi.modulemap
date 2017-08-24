@@ -1,0 +1,6 @@
+framework module Pods_HelloWorldApi {
+  umbrella header "Pods-HelloWorldApi-umbrella.h"
+
+  export *
+  module * { export * }
+}
