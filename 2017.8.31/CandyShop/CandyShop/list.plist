@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Lollipop Lollipop Lollipop Lollipop Lollipop Lollipop Lollipop Lollipop</string>
+		<key>price</key>
+		<integer>4</integer>
+		<key>url</key>
+		<string>https://images.blogthings.com/thelollipoptest/lollipop-3.jpg</string>
+		<key>desc</key>
+		<string>סוכריה על מקל</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Jelly Bean</string>
+		<key>price</key>
+		<real>12</real>
+		<key>url</key>
+		<string>http://www.candywarehouse.com/assets/item/thumbnail/brachs-jumbo-jelly-beans-128483-ic2.jpg</string>
+		<key>desc</key>
+		<string>שקית אפוני גומי, למה מה חשבת, שזה פולי קפה?</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>KitKat</string>
+		<key>price</key>
+		<real>7.1</real>
+		<key>url</key>
+		<string>https://www.hersheys.com/is/image/content/dam/kitkat/en_us/images/products/34000_13850_001_Item_Front.png?hei=360&amp;wid=360&amp;fmt=png-alpha</string>
+		<key>desc</key>
+		<string>צ׳וקולד, טעים אחו שילינג (לא מטבע, מטבע לשון)</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Oreo</string>
+		<key>price</key>
+		<integer>14</integer>
+		<key>url</key>
+		<string>http://www.oreo.com/img/Oreo_FB_Share_100x100.jpg</string>
+		<key>desc</key>
+		<string>עוגיה, מומלץ לחצות ל2 חצאים לא שווים. טוב גם כבסיס לעוגת גלידה</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Marshmallow</string>
+		<key>price</key>
+		<real>1000.5</real>
+		<key>url</key>
+		<string>https://www.eatsamazing.co.uk/wp-content/uploads/2016/12/How-to-make-easy-marshmallow-penguins-cute-Christmas-food-idea-for-kids-they-make-great-party-food-treats-Eats-Amazing-UK.jpg</string>
+		<key>desc</key>
+		<string>לא בריא, זה למה זה יקר</string>
+	</dict>
+</array>
+</plist>
