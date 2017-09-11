@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GenderAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type a name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jIE-P0-M90">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyg-qL-POt">
+                                <rect key="frame" x="146" y="90" width="83" height="30"/>
+                                <state key="normal" title="check name"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omP-Z2-j0d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaJ-gW-tF2">
+                                <rect key="frame" x="145.5" y="150" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9PL-wS-O00">
+                                <rect key="frame" x="8" y="179" width="359" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vyg-qL-POt" firstAttribute="centerX" secondItem="jIE-P0-M90" secondAttribute="centerX" id="1uN-9C-xaM"/>
+                            <constraint firstItem="jIE-P0-M90" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="4rr-eb-dlJ"/>
+                            <constraint firstItem="9PL-wS-O00" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="5zs-PM-9Tj"/>
+                            <constraint firstAttribute="trailing" secondItem="9PL-wS-O00" secondAttribute="trailing" constant="8" id="cPI-uS-5Cp"/>
+                            <constraint firstItem="xaJ-gW-tF2" firstAttribute="centerX" secondItem="vyg-qL-POt" secondAttribute="centerX" id="jbB-v3-MHM"/>
+                            <constraint firstAttribute="trailing" secondItem="jIE-P0-M90" secondAttribute="trailing" constant="16" id="kd6-VY-Kdt"/>
+                            <constraint firstItem="vyg-qL-POt" firstAttribute="top" secondItem="jIE-P0-M90" secondAttribute="bottom" constant="24" id="kzk-8a-uuf"/>
+                            <constraint firstItem="xaJ-gW-tF2" firstAttribute="top" secondItem="vyg-qL-POt" secondAttribute="bottom" constant="30" id="n4Q-Vq-Z7m"/>
+                            <constraint firstItem="9PL-wS-O00" firstAttribute="top" secondItem="xaJ-gW-tF2" secondAttribute="bottom" constant="8" id="ryM-S5-4Qr"/>
+                            <constraint firstItem="jIE-P0-M90" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="uRV-2S-bEa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="xaJ-gW-tF2" id="rKG-cJ-uWa"/>
+                        <outlet property="progressView" destination="9PL-wS-O00" id="Bh0-Hx-eBM"/>
+                        <outlet property="textField" destination="jIE-P0-M90" id="wNZ-sy-LEj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

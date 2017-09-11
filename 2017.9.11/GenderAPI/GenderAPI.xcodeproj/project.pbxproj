@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		214A7BFFC28429306DB1C7DE /* Pods_GenderAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A2464B23F40E12BE65A0D9 /* Pods_GenderAPI.framework */; };
+		B2F85A141F66E1D3005FB43F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F85A131F66E1D3005FB43F /* AppDelegate.swift */; };
+		B2F85A161F66E1D3005FB43F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F85A151F66E1D3005FB43F /* ViewController.swift */; };
+		B2F85A191F66E1D3005FB43F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F85A171F66E1D3005FB43F /* Main.storyboard */; };
+		B2F85A1B1F66E1D3005FB43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F85A1A1F66E1D3005FB43F /* Assets.xcassets */; };
+		B2F85A1E1F66E1D3005FB43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F85A1C1F66E1D3005FB43F /* LaunchScreen.storyboard */; };
+		B2F85A271F66EF67005FB43F /* GenderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F85A261F66EF67005FB43F /* GenderResult.swift */; };
+		B2F85A291F66F09D005FB43F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F85A281F66F09D005FB43F /* APIManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01BD2B4236C0AB70B474D484 /* Pods-GenderAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenderAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GenderAPI/Pods-GenderAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		59A2464B23F40E12BE65A0D9 /* Pods_GenderAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenderAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C58A9ED666892D3603A5FA5 /* Pods-GenderAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenderAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-GenderAPI/Pods-GenderAPI.release.xcconfig"; sourceTree = "<group>"; };
+		B2F85A101F66E1D3005FB43F /* GenderAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenderAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F85A131F66E1D3005FB43F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2F85A151F66E1D3005FB43F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2F85A181F66E1D3005FB43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2F85A1A1F66E1D3005FB43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2F85A1D1F66E1D3005FB43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2F85A1F1F66E1D3005FB43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F85A261F66EF67005FB43F /* GenderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderResult.swift; sourceTree = "<group>"; };
+		B2F85A281F66F09D005FB43F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2F85A0D1F66E1D3005FB43F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214A7BFFC28429306DB1C7DE /* Pods_GenderAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7681393E1565EDF08BDD6ED4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01BD2B4236C0AB70B474D484 /* Pods-GenderAPI.debug.xcconfig */,
+				8C58A9ED666892D3603A5FA5 /* Pods-GenderAPI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2F85A071F66E1D3005FB43F = {
+			isa = PBXGroup;
+			children = (
+				B2F85A121F66E1D3005FB43F /* GenderAPI */,
+				B2F85A111F66E1D3005FB43F /* Products */,
+				7681393E1565EDF08BDD6ED4 /* Pods */,
+				F7EFD91E994D5F4E988274C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2F85A111F66E1D3005FB43F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2F85A101F66E1D3005FB43F /* GenderAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2F85A121F66E1D3005FB43F /* GenderAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B2F85A251F66EF24005FB43F /* Model */,
+				B2F85A131F66E1D3005FB43F /* AppDelegate.swift */,
+				B2F85A151F66E1D3005FB43F /* ViewController.swift */,
+				B2F85A171F66E1D3005FB43F /* Main.storyboard */,
+				B2F85A1A1F66E1D3005FB43F /* Assets.xcassets */,
+				B2F85A1C1F66E1D3005FB43F /* LaunchScreen.storyboard */,
+				B2F85A1F1F66E1D3005FB43F /* Info.plist */,
+			);
+			path = GenderAPI;
+			sourceTree = "<group>";
+		};
+		B2F85A251F66EF24005FB43F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2F85A261F66EF67005FB43F /* GenderResult.swift */,
+				B2F85A281F66F09D005FB43F /* APIManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F7EFD91E994D5F4E988274C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59A2464B23F40E12BE65A0D9 /* Pods_GenderAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2F85A0F1F66E1D3005FB43F /* GenderAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F85A221F66E1D3005FB43F /* Build configuration list for PBXNativeTarget "GenderAPI" */;
+			buildPhases = (
+				67B6381154FE5599995CFEC6 /* [CP] Check Pods Manifest.lock */,
+				B2F85A0C1F66E1D3005FB43F /* Sources */,
+				B2F85A0D1F66E1D3005FB43F /* Frameworks */,
+				B2F85A0E1F66E1D3005FB43F /* Resources */,
+				7FB1A2B18726668E6133C5D3 /* [CP] Embed Pods Frameworks */,
+				E31B1B6EF09045500D0D70CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenderAPI;
+			productName = GenderAPI;
+			productReference = B2F85A101F66E1D3005FB43F /* GenderAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2F85A081F66E1D3005FB43F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = hackeru;
+				TargetAttributes = {
+					B2F85A0F1F66E1D3005FB43F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B2F85A0B1F66E1D3005FB43F /* Build configuration list for PBXProject "GenderAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2F85A071F66E1D3005FB43F;
+			productRefGroup = B2F85A111F66E1D3005FB43F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2F85A0F1F66E1D3005FB43F /* GenderAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2F85A0E1F66E1D3005FB43F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F85A1E1F66E1D3005FB43F /* LaunchScreen.storyboard in Resources */,
+				B2F85A1B1F66E1D3005FB43F /* Assets.xcassets in Resources */,
+				B2F85A191F66E1D3005FB43F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67B6381154FE5599995CFEC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB1A2B18726668E6133C5D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GenderAPI/Pods-GenderAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E31B1B6EF09045500D0D70CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GenderAPI/Pods-GenderAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2F85A0C1F66E1D3005FB43F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F85A291F66F09D005FB43F /* APIManager.swift in Sources */,
+				B2F85A161F66E1D3005FB43F /* ViewController.swift in Sources */,
+				B2F85A271F66EF67005FB43F /* GenderResult.swift in Sources */,
+				B2F85A141F66E1D3005FB43F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2F85A171F66E1D3005FB43F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F85A181F66E1D3005FB43F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2F85A1C1F66E1D3005FB43F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F85A1D1F66E1D3005FB43F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2F85A201F66E1D3005FB43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2F85A211F66E1D3005FB43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2F85A231F66E1D3005FB43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BD2B4236C0AB70B474D484 /* Pods-GenderAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GenderAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.GenderAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2F85A241F66E1D3005FB43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C58A9ED666892D3603A5FA5 /* Pods-GenderAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GenderAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.GenderAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2F85A0B1F66E1D3005FB43F /* Build configuration list for PBXProject "GenderAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F85A201F66E1D3005FB43F /* Debug */,
+				B2F85A211F66E1D3005FB43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F85A221F66E1D3005FB43F /* Build configuration list for PBXNativeTarget "GenderAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F85A231F66E1D3005FB43F /* Debug */,
+				B2F85A241F66E1D3005FB43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2F85A081F66E1D3005FB43F /* Project object */;
+}
