@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.5.0)
+  - HCSStarRatingView (1.5)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - HCSStarRatingView
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+
+PODFILE CHECKSUM: cacd0d0a5f613d5e52c5184c8279676eae32a662
+
+COCOAPODS: 1.2.0
