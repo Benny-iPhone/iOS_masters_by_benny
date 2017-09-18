@@ -1,20 +1,29 @@
 PODS:
   - Alamofire (4.5.0)
+  - CCBottomRefreshControl (0.5.2)
   - HCSStarRatingView (1.5)
+  - RESideMenu (4.0.7)
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
+  - Toast (3.1.0)
 
 DEPENDENCIES:
   - Alamofire
+  - CCBottomRefreshControl
   - HCSStarRatingView
+  - RESideMenu
   - SDWebImage
+  - Toast
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
   HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: cacd0d0a5f613d5e52c5184c8279676eae32a662
+PODFILE CHECKSUM: 4796b9e0f59a535d1ec4757add5f24f8adb50ef5
 
 COCOAPODS: 1.2.0

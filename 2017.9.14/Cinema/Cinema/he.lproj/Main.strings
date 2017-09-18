@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "title"; ObjectID = "5Vr-id-2j5"; */
+"5Vr-id-2j5.text" = "title";
+
+/* Class = "UILabel"; text = "budget label"; ObjectID = "O6w-QD-qw7"; */
+"O6w-QD-qw7.text" = "budget label";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "R5q-Te-Ndh"; */
+"R5q-Te-Ndh.title" = "Root View Controller";
+
+/* Class = "UILabel"; text = "Original Title"; ObjectID = "knO-sm-gRh"; */
+"knO-sm-gRh.text" = "Original Title";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "lPy-EP-VId"; */
+"lPy-EP-VId.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "31-8-2017"; ObjectID = "oaf-12-L3E"; */
+"oaf-12-L3E.text" = "31-8-2017";
+
+/* Class = "UILabel"; text = "genres, label"; ObjectID = "tfs-em-b9s"; */
+"tfs-em-b9s.text" = "genres, label";

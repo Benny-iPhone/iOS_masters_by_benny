@@ -19,9 +19,30 @@ class APIManager{
     enum Endpoint : String{
         case nowPlaying = "/movie/now_playing"
         case topRated = "/movie/top_rated"
+        case latest = "/movie/latest"
+        case popular = "/movie/popular"
+        case upcoming = "/movie/upcoming"
+        
+        static let all : [Endpoint] = [.nowPlaying,
+                                       .topRated,
+                                       .latest,
+                                       .popular,
+                                       .upcoming]
+        
+        var name : String{
+            get{
+                switch self {
+                case .nowPlaying: return "בקולנוע"
+                case .topRated: return "המדורגים"
+                case .latest: return "החדשים"
+                case .popular: return "האהובים"
+                case .upcoming: return "בקרוב"
+                }
+            }
+        }
     }
     
-    typealias Callback = (_ arr : [Movie]) -> Void
+    typealias Callback = (_ arr : [Movie],_ err : Error?) -> Void
     
     func getDetails(of movie : Movie, callback : @escaping (DetailedMovie?)->Void){
         let params : [String:Any] = [
@@ -56,16 +77,40 @@ class APIManager{
         
         let url = baseURL + endpoint.rawValue
         
+        
         Alamofire.request(url, method: .get, parameters: params).responseJSON { (dataRes) in
             
             guard let json = dataRes.result.value as? [String:Any] else{
-                callback([])
+                callback([],dataRes.error)
+                //print(dataRes.error)
                 return
             }
             
-            let results = json["results"] as? [[String:Any]] ?? []
+            let success = json["success"] as? Bool ?? true
+            guard success else{
+                
+                let code = json["status_code"] as? Int ?? 500
+                let reason = json["status_message"] as? String ?? "unknown error"
+
+                let err = NSError(domain: "imoviedb", code: code, userInfo: [
+                    NSLocalizedDescriptionKey:reason
+                    ])
+                
+                callback([], err as Error)
+                return
+                
+            }
+            
+            let results : [[String:Any]]
+            
+            if endpoint == .latest{
+                results = [json]
+            } else {
+                results = json["results"] as? [[String:Any]] ?? []
+            }
+            
             let arr : [Movie] = results.flatMap{Movie($0)}
-            callback(arr)
+            callback(arr,nil)
             
 //            results.flatMap({ (dict : [String : Any]) -> Movie? in
 //                return Movie(dict)

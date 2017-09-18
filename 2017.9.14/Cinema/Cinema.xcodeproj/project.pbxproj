@@ -10,6 +10,10 @@
 		B2457A581F6AD7DF008EA684 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2457A571F6AD7DF008EA684 /* MovieCell.swift */; };
 		B2457A5A1F6AE35E008EA684 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2457A591F6AE35E008EA684 /* MovieDetailsViewController.swift */; };
 		B2457A5C1F6AFAB3008EA684 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2457A5B1F6AFAB3008EA684 /* WebViewController.swift */; };
+		B2D7FA471F702B6E00C42CA8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7FA461F702B6E00C42CA8 /* Utils.swift */; };
+		B2D7FA4B1F702D9C00C42CA8 /* UIViewController+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7FA4A1F702D9C00C42CA8 /* UIViewController+utils.swift */; };
+		B2D7FA4D1F70320C00C42CA8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7FA4C1F70320C00C42CA8 /* MenuViewController.swift */; };
+		B2D7FA4F1F70327C00C42CA8 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7FA4E1F70327C00C42CA8 /* MenuCell.swift */; };
 		B2F85A371F66FD51005FB43F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F85A361F66FD51005FB43F /* AppDelegate.swift */; };
 		B2F85A3C1F66FD51005FB43F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F85A3A1F66FD51005FB43F /* Main.storyboard */; };
 		B2F85A3E1F66FD51005FB43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F85A3D1F66FD51005FB43F /* Assets.xcassets */; };
@@ -26,6 +30,12 @@
 		B2457A571F6AD7DF008EA684 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		B2457A591F6AE35E008EA684 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		B2457A5B1F6AFAB3008EA684 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B2D7FA461F702B6E00C42CA8 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B2D7FA481F702CA300C42CA8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		B2D7FA491F702CA400C42CA8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B2D7FA4A1F702D9C00C42CA8 /* UIViewController+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+utils.swift"; sourceTree = "<group>"; };
+		B2D7FA4C1F70320C00C42CA8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B2D7FA4E1F70327C00C42CA8 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		B2F85A331F66FD51005FB43F /* Cinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F85A361F66FD51005FB43F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F85A3B1F66FD51005FB43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				B2457A571F6AD7DF008EA684 /* MovieCell.swift */,
+				B2D7FA4E1F70327C00C42CA8 /* MenuCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -104,6 +115,7 @@
 			children = (
 				B2F85A4B1F670230005FB43F /* APIManager.swift */,
 				B2F85A491F66FE59005FB43F /* Movie.swift */,
+				B2D7FA461F702B6E00C42CA8 /* Utils.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -114,6 +126,8 @@
 				B2F85A4E1F670799005FB43F /* MoviesViewController.swift */,
 				B2457A591F6AE35E008EA684 /* MovieDetailsViewController.swift */,
 				B2457A5B1F6AFAB3008EA684 /* WebViewController.swift */,
+				B2D7FA4A1F702D9C00C42CA8 /* UIViewController+utils.swift */,
+				B2D7FA4C1F70320C00C42CA8 /* MenuViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -251,12 +265,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F85A4C1F670230005FB43F /* APIManager.swift in Sources */,
+				B2D7FA4D1F70320C00C42CA8 /* MenuViewController.swift in Sources */,
 				B2F85A371F66FD51005FB43F /* AppDelegate.swift in Sources */,
 				B2457A5A1F6AE35E008EA684 /* MovieDetailsViewController.swift in Sources */,
 				B2F85A4A1F66FE59005FB43F /* Movie.swift in Sources */,
+				B2D7FA4F1F70327C00C42CA8 /* MenuCell.swift in Sources */,
 				B2457A5C1F6AFAB3008EA684 /* WebViewController.swift in Sources */,
+				B2D7FA4B1F702D9C00C42CA8 /* UIViewController+utils.swift in Sources */,
 				B2457A581F6AD7DF008EA684 /* MovieCell.swift in Sources */,
 				B2F85A4F1F670799005FB43F /* MoviesViewController.swift in Sources */,
+				B2D7FA471F702B6E00C42CA8 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +285,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B2F85A3B1F66FD51005FB43F /* Base */,
+				B2D7FA481F702CA300C42CA8 /* he */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -275,6 +294,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B2F85A401F66FD51005FB43F /* Base */,
+				B2D7FA491F702CA400C42CA8 /* he */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -286,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -336,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

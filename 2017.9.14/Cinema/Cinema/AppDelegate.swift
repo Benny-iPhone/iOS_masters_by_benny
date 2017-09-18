@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RESideMenu
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let center = window?.rootViewController
+        let menu = center?.storyboard?.instantiateViewController(withIdentifier: "left")
+        let left = isRTL ? nil : menu
+        let right = isRTL ? menu : nil
+        
+        let root = RESideMenu(contentViewController: center, leftMenuViewController: left, rightMenuViewController: right)
+        
+        root?.backgroundImage = #imageLiteral(resourceName: "bg")
+        
+        window?.rootViewController = root
+        
+        
+        
+        
         return true
     }
 
