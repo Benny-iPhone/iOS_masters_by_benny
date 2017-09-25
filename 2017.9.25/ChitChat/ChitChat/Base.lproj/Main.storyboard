@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tj6-rb-Q7w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chit Chat-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="RoomsViewController" customModule="ChitChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pSX-UE-Q5Y">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="ptB-Ma-vDN" customClass="RoomCell" customModule="ChitChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ptB-Ma-vDN" id="u35-XJ-1DR">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXQ-Lu-EOx">
+                                                    <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UXQ-Lu-EOx" firstAttribute="leading" secondItem="u35-XJ-1DR" secondAttribute="leading" constant="8" id="84d-HQ-Jqh"/>
+                                                <constraint firstItem="UXQ-Lu-EOx" firstAttribute="top" secondItem="u35-XJ-1DR" secondAttribute="top" constant="8" id="XtF-XC-OrP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="UXQ-Lu-EOx" id="cl3-wW-LPf"/>
+                                            <segue destination="4Po-VM-Oeb" kind="push" id="ZRg-wU-8Nu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pSX-UE-Q5Y" secondAttribute="bottom" id="5YB-Qg-3xa"/>
+                            <constraint firstItem="pSX-UE-Q5Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Rjl-kD-23e"/>
+                            <constraint firstAttribute="trailing" secondItem="pSX-UE-Q5Y" secondAttribute="trailing" id="j2P-cH-64W"/>
+                            <constraint firstItem="pSX-UE-Q5Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sJq-gX-88Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chit Chat" id="X4y-Yb-FbU">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="FMD-FQ-2rT">
+                            <connections>
+                                <action selector="signOutAction:" destination="BYZ-38-t0r" id="Ust-ww-YdW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wyi-5N-UKT">
+                            <connections>
+                                <segue destination="YyP-4s-h7m" kind="push" id="R37-Xh-nLV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="pSX-UE-Q5Y" id="SLx-VG-d2G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="-544"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pV3-o6-DPY">
+            <objects>
+                <viewController id="4Po-VM-Oeb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jZx-tE-6HJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="98H-Ui-p38"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xUG-UB-nTT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GpE-8R-rrk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abT-pB-wua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="-550"/>
+        </scene>
+        <!--New Room-->
+        <scene sceneID="bH1-ES-Hye">
+            <objects>
+                <viewController id="YyP-4s-h7m" customClass="NewRoomViewController" customModule="ChitChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VS1-2q-ydv"/>
+                        <viewControllerLayoutGuide type="bottom" id="uLI-YY-eyN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="doo-4G-M6h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dlf-B8-nM2">
+                                <rect key="frame" x="16" y="80" width="343" height="97"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="room name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbg-ap-BOt">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2F-n1-3YN">
+                                        <rect key="frame" x="0.0" y="46" width="343" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                        <state key="normal" title="Create Room"/>
+                                        <connections>
+                                            <action selector="createRoomAction:" destination="YyP-4s-h7m" eventType="touchUpInside" id="48C-Zl-Y94"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dlf-B8-nM2" secondAttribute="trailing" constant="16" id="8qh-wW-TTk"/>
+                            <constraint firstItem="dlf-B8-nM2" firstAttribute="top" secondItem="VS1-2q-ydv" secondAttribute="bottom" constant="16" id="EMJ-GX-5wX"/>
+                            <constraint firstItem="dlf-B8-nM2" firstAttribute="leading" secondItem="doo-4G-M6h" secondAttribute="leading" constant="16" id="sEF-nO-MPt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Room" id="6Jb-b9-sDl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="XaS-2V-7Ns"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="wbg-ap-BOt" id="Lej-z7-Gcc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7p7-u0-l5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620" y="-1268"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ggq-9m-pBc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tj6-rb-Q7w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t5E-Gi-WDO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8DW-64-MPM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bqn-pc-7ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2000000000000002" y="-543.77811094452773"/>
+        </scene>
+    </scenes>
+</document>
