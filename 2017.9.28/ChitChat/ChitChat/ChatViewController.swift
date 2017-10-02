@@ -19,6 +19,8 @@ class ChatViewController: JSQMessagesViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.automaticallyAdjustsScrollViewInsets = false
 
         let factory = JSQMessagesBubbleImageFactory()
         incomingBubble = factory?.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleRed())

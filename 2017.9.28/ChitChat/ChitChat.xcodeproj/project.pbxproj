@@ -25,6 +25,7 @@
 		B22ED2EE1F79791A00B9D066 /* to-do-list in Resources */ = {isa = PBXBuildFile; fileRef = B22ED2ED1F79791A00B9D066 /* to-do-list */; };
 		B22ED2F01F7979AE00B9D066 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ED2EF1F7979AE00B9D066 /* Room.swift */; };
 		B22ED2F31F797D8C00B9D066 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ED2F21F797D8C00B9D066 /* RoomCell.swift */; };
+		B2BBFDCC1F82A8FE00B8F7E0 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B2BBFDCB1F82A8F900B8F7E0 /* sound.mp3 */; };
 		F1F42049046D35B0166DC220 /* Pods_ChitChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094C58DC5EE572741F28EE42 /* Pods_ChitChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		B22ED2ED1F79791A00B9D066 /* to-do-list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "to-do-list"; sourceTree = "<group>"; };
 		B22ED2EF1F7979AE00B9D066 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		B22ED2F21F797D8C00B9D066 /* RoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		B2BBFDCB1F82A8F900B8F7E0 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		B2D388921F82A48500E476CB /* ChitChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChitChat.entitlements; sourceTree = "<group>"; };
 		CDC21B89E6354801B4A07550 /* Pods-ChitChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChitChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChitChat/Pods-ChitChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +99,7 @@
 		B22D2D9C1F794FB300B6C5D8 /* ChitChat */ = {
 			isa = PBXGroup;
 			children = (
+				B2D388921F82A48500E476CB /* ChitChat.entitlements */,
 				B22D2D9D1F794FB300B6C5D8 /* AppDelegate.swift */,
 				B22ED2F11F797D6D00B9D066 /* view */,
 				B22ED2E81F79742400B9D066 /* model */,
@@ -106,6 +110,7 @@
 				B22D2DA91F794FB300B6C5D8 /* Info.plist */,
 				B22ED2E01F79657C00B9D066 /* GoogleService-Info.plist */,
 				B22ED2ED1F79791A00B9D066 /* to-do-list */,
+				B2BBFDCB1F82A8F900B8F7E0 /* sound.mp3 */,
 			);
 			path = ChitChat;
 			sourceTree = "<group>";
@@ -194,7 +199,13 @@
 				TargetAttributes = {
 					B22D2D991F794FB300B6C5D8 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = J7YZTH9Z4F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -221,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BBFDCC1F82A8FE00B8F7E0 /* sound.mp3 in Resources */,
 				B22D2DB01F79510300B6C5D8 /* Login.storyboard in Resources */,
 				B22D2DA81F794FB300B6C5D8 /* LaunchScreen.storyboard in Resources */,
 				B22ED2EE1F79791A00B9D066 /* to-do-list in Resources */,
@@ -420,6 +432,8 @@
 			baseConfigurationReference = A236BEDB678AC23C3B7FD388 /* Pods-ChitChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChitChat/ChitChat.entitlements;
+				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = ChitChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.ChitChat;
@@ -433,6 +447,8 @@
 			baseConfigurationReference = CDC21B89E6354801B4A07550 /* Pods-ChitChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChitChat/ChitChat.entitlements;
+				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = ChitChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.ChitChat;

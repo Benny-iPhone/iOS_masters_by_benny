@@ -103,8 +103,7 @@ class DBManager{
     }
     
     
-    func sendNewMessage(with text : String, room : Room)
-    {
+    func sendNewMessage(with text : String, roomId : String){
         guard let uid = self.uid, let name = self.username else{
             return
         }
@@ -116,7 +115,14 @@ class DBManager{
             "date":Date().timeIntervalSince1970
         ]
         
-        messagesRef.child(room.id).childByAutoId().setValue(dict)
+        messagesRef.child(roomId).childByAutoId().setValue(dict)
+    }
+
+    func sendNewMessage(with text : String, room : Room)
+    {
+        Messaging.messaging().subscribe(toTopic: room.id)
+
+        self.sendNewMessage(with: text, roomId: room.id)
         
     }
     
