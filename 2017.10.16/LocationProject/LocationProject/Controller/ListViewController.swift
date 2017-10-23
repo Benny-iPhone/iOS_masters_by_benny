@@ -25,10 +25,30 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         refreshData()
         
+        NotificationCenter.default.addObserver(forName: .locationUpdate, object: nil, queue: .main) { (note) in
+            //location update, lets refresh tableview
+            
+            self.refreshData()
+        }
+        
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     func refreshData(){
-        self.tableArray = Branch.allBranches()
+        let arr = Branch.allBranches()
+        guard let userLocation = AppManager.manager.location else{
+            self.tableArray = arr
+            self.tableView.reloadData()
+            return
+        }
+        self.tableArray = arr.sorted(by: { (b1, b2) -> Bool in
+            return b1.location.distance(from: userLocation) < b2.location.distance(from: userLocation)
+        })
+        
+        self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

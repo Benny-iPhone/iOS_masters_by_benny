@@ -32,7 +32,9 @@ class Branch: NSObject {
             Branch(name: "Dolphins Reef", latitude: 29.5265179, longitude: 34.9339661),
             Branch(name: "HackerU", latitude: 32.0844269, longitude: 34.7985299),
             Branch(name: "Times Square", latitude: 40.758899, longitude: -73.9873197),
-            Branch(name: "Ko Samui", latitude: 9.551546, longitude: 99.5901912)
+            Branch(name: "Ko Samui", latitude: 9.551546, longitude: 99.5901912),
+            Branch(name: "Apple Inc.", latitude: 37.43549370, longitude: -122.24325056),
+            Branch(name: "Stanford", latitude: 37.4274787, longitude: -122.1719077)
         ]
     }
     

@@ -15,6 +15,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mapView.showsUserLocation = true
         mapView.addAnnotations(Branch.allBranches())
 
         // Do any additional setup after loading the view.

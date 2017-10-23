@@ -19,6 +19,13 @@ class BranchCell: UITableViewCell {
         
         nameLabel.text = branch.name
         
+        if let userLocation = AppManager.manager.location{
+            let distance = branch.location.distance(from: userLocation) //meters
+            distanceLabel.text = String(format: "%.2f km",distance / 1_000)
+        } else {
+            distanceLabel.text = "N/A"
+        }
+        
     }
 
 }
